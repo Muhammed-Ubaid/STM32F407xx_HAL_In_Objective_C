@@ -1,0 +1,2 @@
+../Src/STM32F407xx_GPIO_Driver.c:12:6:GPIO_PeriClockControl	16	static
+../Src/STM32F407xx_GPIO_Driver.c:103:6:GPIO_Init	80	static

@@ -1,0 +1,13 @@
+/*
+ * STM32F407xx_GPIO_Driver_Public_Definitions.h
+ *
+ *  Created on: Oct 19, 2023
+ *      Author: Ubaid
+ */
+
+
+#ifndef STM32F407XX_GPIO_DRIVER_PUBLIC_H_
+#define STM32F407XX_GPIO_DRIVER_PUBLIC_H_
+
+
+#endif

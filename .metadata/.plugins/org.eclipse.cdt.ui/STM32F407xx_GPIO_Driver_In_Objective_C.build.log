@@ -1,0 +1,69 @@
+07:58:50 **** Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/STM32F407xx_GPIO_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Public_Interfaces" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/STM32F407xx_GPIO_Driver.d" -MT"Src/STM32F407xx_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/STM32F407xx_GPIO_Driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Public_Interfaces" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Public_Interfaces" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Public_Interfaces" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/STM32F407xx_GPIO_Driver.c: In function 'GPIO_Init':
+../Src/STM32F407xx_GPIO_Driver.c:108:57: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  108 |         UserHandle.Private_GPIO_Data = (GPIO_RegDef_t*) malloc(sizeof(GPIO_RegDef_t));
+      |                                                         ^~~~~~
+../Src/STM32F407xx_GPIO_Driver.c:11:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   10 | #include <STM32F407xx_GPIO_Driver_Definitions_Private.h>
+  +++ |+#include <stdlib.h>
+   11 | 
+../Src/STM32F407xx_GPIO_Driver.c:108:57: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  108 |         UserHandle.Private_GPIO_Data = (GPIO_RegDef_t*) malloc(sizeof(GPIO_RegDef_t));
+      |                                                         ^~~~~~
+../Src/STM32F407xx_GPIO_Driver.c:108:57: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Src/STM32F407xx_GPIO_Driver.c:108:38: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  108 |         UserHandle.Private_GPIO_Data = (GPIO_RegDef_t*) malloc(sizeof(GPIO_RegDef_t));
+      |                                      ^
+../Src/STM32F407xx_GPIO_Driver.c:113:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  113 |                 UserHandle.Private_GPIO_Data = GPIOA;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:118:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  118 |                 UserHandle.Private_GPIO_Data = GPIOB;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:123:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  123 |                 UserHandle.Private_GPIO_Data = GPIOC;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:128:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  128 |                 UserHandle.Private_GPIO_Data = GPIOD;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:133:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  133 |                 UserHandle.Private_GPIO_Data = GPIOE;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:138:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  138 |                 UserHandle.Private_GPIO_Data = GPIOF;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:143:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  143 |                 UserHandle.Private_GPIO_Data = GPIOG;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:148:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  148 |                 UserHandle.Private_GPIO_Data = GPIOH;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:153:46: warning: assignment to 'struct GPIO_RegDef_t *' from incompatible pointer type 'GPIO_RegDef_t *' [-Wincompatible-pointer-types]
+  153 |                 UserHandle.Private_GPIO_Data = GPIOI;
+      |                                              ^
+../Src/STM32F407xx_GPIO_Driver.c:106:18: warning: unused variable 'temp_var' [-Wunused-variable]
+  106 |         uint32_t temp_var = 0;
+      |                  ^~~~~~~~
+../Src/STM32F407xx_GPIO_Driver.c:105:23: warning: unused variable 'initializer' [-Wunused-variable]
+  105 |         GPIO_Handle_t initializer = {0};
+      |                       ^~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32F407xx_GPIO_Driver_In_Objective_C.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Embedded_Projects\STM_Workspaces\Objective_C_Projects\STM32F407xx_HAL_In_Objective_C\STM32F407xx_GPIO_Driver_In_Objective_C\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407xx_GPIO_Driver_In_Objective_C.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F407xx_GPIO_Driver_In_Objective_C.elf
+ 
+arm-none-eabi-size   STM32F407xx_GPIO_Driver_In_Objective_C.elf 
+arm-none-eabi-objdump -h -S  STM32F407xx_GPIO_Driver_In_Objective_C.elf  > "STM32F407xx_GPIO_Driver_In_Objective_C.list"
+   text	   data	    bss	    dec	    hex	filename
+   4160	    100	   1900	   6160	   1810	STM32F407xx_GPIO_Driver_In_Objective_C.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F407xx_GPIO_Driver_In_Objective_C.list
+ 
+
+07:58:50 Build Finished. 0 errors, 14 warnings. (took 385ms)
+
