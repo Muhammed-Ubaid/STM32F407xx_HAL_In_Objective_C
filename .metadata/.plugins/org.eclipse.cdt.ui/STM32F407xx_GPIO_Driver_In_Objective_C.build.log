@@ -1,10 +1,10 @@
-16:52:23 **** Incremental Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
+17:34:56 **** Incremental Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
 make -j16 all 
 arm-none-eabi-size   STM32F407xx_GPIO_Driver_In_Objective_C.elf 
    text	   data	    bss	    dec	    hex	filename
-   4880	    100	   1916	   6896	   1af0	STM32F407xx_GPIO_Driver_In_Objective_C.elf
+   4984	    100	   1932	   7016	   1b68	STM32F407xx_GPIO_Driver_In_Objective_C.elf
 Finished building: default.size.stdout
  
 
-16:52:23 Build Finished. 0 errors, 0 warnings. (took 82ms)
+17:34:56 Build Finished. 0 errors, 0 warnings. (took 136ms)
 

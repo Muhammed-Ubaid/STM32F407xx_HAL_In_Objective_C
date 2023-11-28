@@ -21,11 +21,9 @@
 
 #include "STM32F407xx_GPIO_Driver_Definitions_Public.h"
 
-#define USER_DELAY 250000
-
 void userdelay(void)
 {
-	for(uint32_t d = 0; d<USER_DELAY; d++);
+	for(uint32_t d = 0; d<500000; d++);
 }
 
 
@@ -38,7 +36,6 @@ int main(void)
     /* Loop forever */
 
 	static GPIO_Config_UserHandle_t UserHandle;
-	static GPIO_Config_UserHandle_t UserHandle_Button;
 
 	UserHandle.GPIO_PORT = PORT_GPIOD;
 	UserHandle.GPIO_PIN_MODE = GPIO_MODE_OUT;
@@ -48,24 +45,12 @@ int main(void)
 	UserHandle.GPIO_PUPD_TYPE = GPIO_NO_PUPD;
 
 	GPIO_Init(&UserHandle);
-
-	UserHandle_Button.GPIO_PORT = PORT_GPIOA;
-	UserHandle.GPIO_PIN_MODE = GPIO_MODE_IN;
-	UserHandle_Button.GPIO_PIN_NUM = GPIO_PIN_NO_0;
-	UserHandle_Button.GPIO_SPEED_TYPE = GPIO_SPEED_FAST;
-	UserHandle_Button.GPIO_PUPD_TYPE = GPIO_NO_PUPD;
-
-	GPIO_Init(&UserHandle_Button);
-
 	printf("\n ...main... \n");
 
 	while(1)
 	{
-		if(GPIO_ReadFromInputPin(&UserHandle_Button) == true)
-		{
-			userdelay();
-			GPIO_ToggleOutputPin(&UserHandle);
-		}
+		userdelay();
+		GPIO_ToggleOutputPin(&UserHandle);
 	}
 
 }

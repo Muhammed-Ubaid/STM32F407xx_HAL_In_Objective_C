@@ -13,8 +13,6 @@
 struct GPIO_RegDef_t;
 struct GPIO_PinConfig_t;
 
-#define true 1
-
 /* enums for input config*/
 
 /* GPIO Port definitions*/
@@ -116,7 +114,7 @@ void GPIO_DeInit(GPIO_Config_UserHandle_t UserHandle);
 /*
  * Data read and write
  */
-bool GPIO_ReadFromInputPin(GPIO_Config_UserHandle_t* UserHandle);
+bool GPIO_ReadFromInputPin(GPIO_Config_UserHandle_t UserHandle);
 uint16_t GPIO_ReadFromInputPort(GPIO_Config_UserHandle_t UserHandle);
 void GPIO_WriteToOutputPin(GPIO_Config_UserHandle_t UserHandle, uint8_t l_value);
 void GPIO_WriteToOutputPort(GPIO_Config_UserHandle_t UserHandle, uint16_t l_value,  bool operation);

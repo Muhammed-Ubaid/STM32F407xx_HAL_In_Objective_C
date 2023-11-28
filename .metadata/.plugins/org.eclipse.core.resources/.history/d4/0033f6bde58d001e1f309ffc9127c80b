@@ -21,11 +21,9 @@
 
 #include "STM32F407xx_GPIO_Driver_Definitions_Public.h"
 
-#define USER_DELAY 250000
-
 void userdelay(void)
 {
-	for(uint32_t d = 0; d<USER_DELAY; d++);
+	for(uint32_t d = 0; d<500000; d++);
 }
 
 
@@ -61,11 +59,8 @@ int main(void)
 
 	while(1)
 	{
-		if(GPIO_ReadFromInputPin(&UserHandle_Button) == true)
-		{
-			userdelay();
-			GPIO_ToggleOutputPin(&UserHandle);
-		}
+		userdelay();
+		GPIO_ToggleOutputPin(&UserHandle);
 	}
 
 }

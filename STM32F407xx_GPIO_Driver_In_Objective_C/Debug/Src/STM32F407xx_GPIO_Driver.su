@@ -1,7 +1,7 @@
 ../Src/STM32F407xx_GPIO_Driver.c:14:6:GPIO_PeriClockControl	16	static
 ../Src/STM32F407xx_GPIO_Driver.c:63:6:GPIO_Init	24	static
 ../Src/STM32F407xx_GPIO_Driver.c:191:6:GPIO_DeInit	32	static
-../Src/STM32F407xx_GPIO_Driver.c:230:9:GPIO_ReadFromInputPin	32	static
+../Src/STM32F407xx_GPIO_Driver.c:230:6:GPIO_ReadFromInputPin	24	static
 ../Src/STM32F407xx_GPIO_Driver.c:238:10:GPIO_ReadFromInputPort	32	static
 ../Src/STM32F407xx_GPIO_Driver.c:245:6:GPIO_WriteToOutputPin	24	static
 ../Src/STM32F407xx_GPIO_Driver.c:257:6:GPIO_WriteToOutputPort	24	static

@@ -1,4 +1,4 @@
-16:52:17 **** Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
+17:34:42 **** Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
 make -j16 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
 arm-none-eabi-gcc "../Src/STM32F407xx_GPIO_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Src" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Public_Interfaces" -I"C:/Embedded_Projects/STM_Workspaces/Objective_C_Projects/STM32F407xx_HAL_In_Objective_C/STM32F407xx_GPIO_Driver_In_Objective_C/drivers_stm32f407/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/STM32F407xx_GPIO_Driver.d" -MT"Src/STM32F407xx_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/STM32F407xx_GPIO_Driver.o"
@@ -11,15 +11,15 @@ Finished building target: STM32F407xx_GPIO_Driver_In_Objective_C.elf
 arm-none-eabi-size   STM32F407xx_GPIO_Driver_In_Objective_C.elf 
 arm-none-eabi-objdump -h -S  STM32F407xx_GPIO_Driver_In_Objective_C.elf  > "STM32F407xx_GPIO_Driver_In_Objective_C.list"
    text	   data	    bss	    dec	    hex	filename
-   4880	    100	   1916	   6896	   1af0	STM32F407xx_GPIO_Driver_In_Objective_C.elf
+   4984	    100	   1932	   7016	   1b68	STM32F407xx_GPIO_Driver_In_Objective_C.elf
 Finished building: default.size.stdout
  
 Finished building: STM32F407xx_GPIO_Driver_In_Objective_C.list
  
-16:52:23 **** Incremental Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
+17:34:56 **** Incremental Build of configuration Debug for project STM32F407xx_GPIO_Driver_In_Objective_C ****
 make -j16 all 
 arm-none-eabi-size   STM32F407xx_GPIO_Driver_In_Objective_C.elf 
    text	   data	    bss	    dec	    hex	filename
-   4880	    100	   1916	   6896	   1af0	STM32F407xx_GPIO_Driver_In_Objective_C.elf
+   4984	    100	   1932	   7016	   1b68	STM32F407xx_GPIO_Driver_In_Objective_C.elf
 Finished building: default.size.stdout
  

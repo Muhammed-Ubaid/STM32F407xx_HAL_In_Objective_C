@@ -63,7 +63,6 @@ int main(void)
 	{
 		if(GPIO_ReadFromInputPin(&UserHandle_Button) == true)
 		{
-			userdelay();
 			GPIO_ToggleOutputPin(&UserHandle);
 		}
 	}
