@@ -183,7 +183,7 @@ void GPIO_Init(GPIO_Config_UserHandle_t* UserHandle) {
 			}
 		}
 	} else {
-		//Handle memory alloc error
+		//Handle memory alooc error
 	}
 
 }

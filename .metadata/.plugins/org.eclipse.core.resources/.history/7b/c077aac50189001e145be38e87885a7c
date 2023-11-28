@@ -38,7 +38,6 @@ int main(void)
 	static GPIO_Config_UserHandle_t UserHandle;
 
 	UserHandle.GPIO_PORT = PORT_GPIOD;
-	UserHandle.GPIO_PIN_MODE = GPIO_MODE_OUT;
 	UserHandle.GPIO_PIN_NUM = GPIO_PIN_NO_12;
 	UserHandle.GPIO_SPEED_TYPE = GPIO_SPEED_FAST;
 	UserHandle.GPIO_OUTPUT_TYPE = GPIO_OP_TYPE_PP;
@@ -50,7 +49,7 @@ int main(void)
 	while(1)
 	{
 		userdelay();
-		GPIO_ToggleOutputPin(&UserHandle);
+		GPIO_ToggleOutputPin(UserHandle);
 	}
 
 }

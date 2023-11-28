@@ -108,7 +108,7 @@ typedef struct {
 /*
  * Init and De-init
  */
-void GPIO_Init(GPIO_Config_UserHandle_t* UserHandle);
+void GPIO_Init(GPIO_Config_UserHandle_t UserHandle);
 void GPIO_DeInit(GPIO_Config_UserHandle_t UserHandle);
 
 /*
@@ -118,7 +118,7 @@ uint8_t GPIO_ReadFromInputPin(GPIO_Config_UserHandle_t UserHandle);
 uint16_t GPIO_ReadFromInputPort(GPIO_Config_UserHandle_t UserHandle);
 void GPIO_WriteToOutputPin(GPIO_Config_UserHandle_t UserHandle, uint8_t l_value);
 void GPIO_WriteToOutputPort(GPIO_Config_UserHandle_t UserHandle, uint16_t l_value,  bool operation);
-void GPIO_ToggleOutputPin(GPIO_Config_UserHandle_t* UserHandle);
+//void GPIO_ToggleOutputPin(GPIO_Config_UserHandle_t UserHandle);
 //
 //
 ///*

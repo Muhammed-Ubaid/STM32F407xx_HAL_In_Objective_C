@@ -183,7 +183,7 @@ void GPIO_Init(GPIO_Config_UserHandle_t* UserHandle) {
 			}
 		}
 	} else {
-		//Handle memory alloc error
+		//Handle memory alooc error
 	}
 
 }
@@ -266,7 +266,7 @@ void GPIO_WriteToOutputPort(GPIO_Config_UserHandle_t UserHandle, uint16_t l_valu
 	}
 }
 
-void GPIO_ToggleOutputPin(GPIO_Config_UserHandle_t* UserHandle)
+void GPIO_ToggleOutputPin(GPIO_Config_UserHandle_t UserHandle)
 {
-	UserHandle->Private_GPIO_Reg_Data->ODR ^= (1 << UserHandle->GPIO_PIN_NUM);
+	UserHandle.Private_GPIO_Reg_Data->ODR ^= (1 << UserHandle.GPIO_PIN_NUM);
 }
